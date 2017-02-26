@@ -1,0 +1,78 @@
+en:
+  refinery:
+    plugins:
+      contacts:
+        title: Contacts
+        description: Provides a contact form and stores contacts
+    contacts:
+      contacts:
+        new:
+          send: Send message
+          privacy_policy: We value your privacy
+      admin:
+        contacts:
+          contact:
+            read_contact: Read the contact
+            delete_contact: Remove this contact forever
+            said: said
+            mark_as_spam: Mark as spam
+            mark_as_ham: Move to inbox
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Update who gets notified
+            edit_confirmation_email: Edit confirmation email
+          index:
+            no_contacts: You have not received any contacts yet.
+          spam:
+            no_spam: Hooray! You don't have any spam.
+          show:
+            details: Details
+            age: Age
+            actions: Actions
+            back_to_all_contacts: Back to all contacts
+            spam: Spam
+            spam_yes: 'yes'
+            contact: Contact
+            to: To
+            from: From
+            click_to_email: Click to email this address
+            phone: Phone
+            date: Date
+            message: Message
+        settings:
+          notification_recipients_form:
+            contact_settings_value_name: Send notifications to
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to say there is a new contact.
+            hint: When a new contact is submitted, Refinery will send an email notification to you.
+            example: "Enter your email address(es) like: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: To
+            from: From
+            subject: Subject
+            click_to_edit_subject: Click here to edit the subject
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to confirm the contact with the person who made it.
+            below_edit_email_sent: Below you can edit the email that is sent out.
+            the_customer_making_contact: The customer making the contact
+            message: Message
+            note: "Note: place the text %name% where you'd like the customer's name to appear in the email"
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_contact: You just received a new contact on your website.
+          contact_starts: --- contact starts ---
+          contact_ends: --- contact ends ---
+          from: From
+          email: Email
+          phone: Phone
+          message: Message
+          closing_line: Kind Regards
+          ps_html: P.S. All your contacts are stored in the "Contacts" section of Refinery should you ever want to view it later there.
+  activerecord:
+    models:
+      contact: Contact
+    attributes:
+      contact:
+        name: Name
+        email: Email
+        message: Message

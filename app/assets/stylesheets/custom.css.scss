@@ -1,0 +1,17 @@
+$orange:#f48026;
+$cream:#f2f2df;
+
+html, body {background-color:$cream;}
+h1, h2, h3, a {color:$orange;}
+
+#top-nav {
+	background-color:$cream;
+	ul {
+		margin-top:20px;
+		border-bottom:0px solid red;
+	}
+}
+
+#page div.container {
+	background-color:#fff;
+}

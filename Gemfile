@@ -28,6 +28,10 @@ gem 'therubyracer'
 gem 'rails_12factor'
 
 gem 'refinerycms', '~> 3.0.0'
+gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.7']
+gem 'refinerycms-authentication-devise', '~> 1.0.4'
+gem 'refinerycms-forms', github: 'refinery/refinerycms-forms', branch: 'master', group: :development
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,3 +55,5 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'refinerycms-contacts', path: 'vendor/extensions'

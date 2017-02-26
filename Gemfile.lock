@@ -1,3 +1,20 @@
+GIT
+  remote: git://github.com/refinery/refinerycms-forms.git
+  revision: 359af6738e697573e2dc94f36527e1b21000c3bc
+  branch: master
+  specs:
+    refinerycms-forms (1.0.1)
+      refinerycms-core (~> 3.0)
+
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-contacts (1.0.0)
+      actionmailer
+      filters_spam (~> 0.3)
+      refinerycms-core (~> 3.0.5)
+      refinerycms-settings (~> 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -45,6 +62,7 @@ GEM
     awesome_nested_set (3.0.3)
       activerecord (>= 4.0.0, < 5)
     babosa (1.0.2)
+    bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.7)
@@ -63,6 +81,13 @@ GEM
     debug_inspector (0.0.2)
     decorators (2.0.2)
       railties (>= 4.0.0, < 5.1)
+    devise (3.5.10)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diffy (3.1.0)
     dragonfly (1.0.12)
       addressable (~> 2.3)
@@ -70,18 +95,19 @@ GEM
       rack (>= 1.3.0)
     erubis (2.7.0)
     execjs (2.7.0)
+    filters_spam (0.5)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
-    friendly_id (5.2.0)
+    friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     globalize (5.0.1)
       activemodel (>= 4.2.0, < 4.3)
       activerecord (>= 4.2.0, < 4.3)
-    i18n (0.8.0)
-    jbuilder (2.6.1)
-      activesupport (>= 3.0.0, < 5.1)
+    i18n (0.8.1)
+    jbuilder (2.6.3)
+      activesupport (>= 3.0.0, < 5.2)
       multi_json (~> 1.2)
     jquery-rails (4.2.2)
       rails-dom-testing (>= 1, < 3)
@@ -103,6 +129,7 @@ GEM
     multi_json (1.12.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    orm_adapter (0.5.0)
     pg (0.19.0)
     public_suffix (2.0.5)
     rack (1.6.5)
@@ -148,6 +175,11 @@ GEM
       refinerycms-images (= 3.0.5)
       refinerycms-pages (= 3.0.5)
       refinerycms-resources (= 3.0.5)
+    refinerycms-authentication-devise (1.0.4)
+      actionmailer (~> 4.2, >= 4.2.0)
+      devise (~> 3.0, >= 3.2.4)
+      friendly_id (~> 5.1.0)
+      refinerycms-core (~> 3.0, >= 3.0.0)
     refinerycms-core (3.0.5)
       actionpack (>= 4.2.3, < 5.0)
       activerecord (>= 4.2.3, < 5.0)
@@ -184,6 +216,13 @@ GEM
       dragonfly (~> 1.0.0)
       globalize (>= 4.0.0, < 5.2)
       refinerycms-core (= 3.0.5)
+    refinerycms-settings (3.0.0)
+      friendly_id (~> 5.0, >= 5.0.1)
+      refinerycms-core (~> 3.0, >= 3.0.0)
+    refinerycms-wymeditor (1.1.0)
+      refinerycms-core (>= 3.0.0, < 5.0)
+    responders (2.3.0)
+      railties (>= 4.2.0, < 5.1)
     routing-filter (0.6.0)
       actionpack (>= 4.2, < 5.1)
       activesupport (>= 4.2, < 5.1)
@@ -214,7 +253,7 @@ GEM
       libv8 (~> 3.16.14.15)
       ref
     thor (0.19.4)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     tilt (2.0.6)
     truncate_html (0.9.3)
     turbolinks (5.0.1)
@@ -224,6 +263,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.7)
+      rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -245,6 +286,10 @@ DEPENDENCIES
   rails (= 4.2.4)
   rails_12factor
   refinerycms (~> 3.0.0)
+  refinerycms-authentication-devise (~> 1.0.4)
+  refinerycms-contacts!
+  refinerycms-forms!
+  refinerycms-wymeditor (~> 1.0, >= 1.0.7)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

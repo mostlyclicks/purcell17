@@ -1,0 +1,78 @@
+tr:
+  refinery:
+    plugins:
+      contacts:
+        title: Contacts
+        description: Iletisim formu ve kayitlarin temini contacts
+    contacts:
+      contacts:
+        new:
+          send: Mesaj Gonder
+          privacy_policy: Mahremiyetinize onem veriyoruz.
+      admin:
+        contacts:
+          contact:
+            delete_contact: Sonsuza dek contact sil
+            read_contact: Read the contact
+            said: dedi
+            mark_as_spam: Spam olarak isaretle
+            mark_as_ham: Gelen kutusuna tasi
+          submenu:
+            inbox: Gelen Kutusu
+            spam: Istenmeyen E-posta
+            update_notified: Uyari alanlari guncelle
+            edit_confirmation_email: Dogrulama e-posta'sini duzenle
+          index:
+            no_contacts: Henuz  Herhangi bir  contacts almadiniz.
+          spam:
+            no_spam: Oley! Herhangi bir istenmeyen e-posta yok
+          show:
+            details: Detay
+            age: Yas
+            actions: Eylemler
+            back_to_all_contacts: Geri don tum contacts
+            spam: Istenmeyen E-posta
+            spam_yes: 'evet'
+            contact: Contact
+            to: Kime
+            from: Kimden
+            click_to_email: Bu adrese e-posta'layin
+            phone: Telefon
+            date: Tarih
+            message: Mesaj
+        settings:
+          notification_recipients_form:
+            contact_settings_value_name: Bildirimleri gonderecegin  adres
+            explanation: Her kim olursa seninle web sitesi uzerinden iletisime gecen, Refinery yeni bir contact  diye e-posta atar.
+            hint: Yeni Bir contact teslim edildiginde, Refinery bir e-posta bildirisi yollayacak sana.
+            example: "Lutfen e-posta adres(ler)inizi giriniz. Ornek olarak: jack@work.com, jill@office.com gibi"
+          confirmation_email_form:
+            to: Kime
+            from: Kimden
+            subject: Baslik
+            click_to_edit_subject: Basligi degistirmek icin buraya tiklayiniz
+            explanation: Her kim olursa seninle web siten uzerinden iletisime gecen,Refinery yeni bir dogrulama postasi gonderir contact yapan kisiye
+            below_edit_email_sent: Asagida gonderilen e-postayi duzenleyebilirsin.
+            the_customer_making_contact: Musteri contact yapiyor
+            message: Mesaj
+            note: "Not: metini hizala %name% nerede musterinizin e-posta adresi gibi gozukmesini istiyorsan"
+      mailer:
+        notification:
+          greeting: Selamlar
+          you_recieved_new_contact: You just received a new contact on your website.
+          contact_starts: --- contact starts ---
+          contact_ends: --- contact ends ---
+          from: Kimden
+          email: E-posta
+          phone: Telefon
+          message: Mesaj
+          closing_line: Saygilarimizla
+          ps_html: Senin butun contacts kayitli oldugu yer "Contacts" burasidir eger ileride kullanmak istersen
+  activerecord:
+    models:
+      contact: Contact
+    attributes:
+      contact:
+        name: Name
+        email: Email
+        message: Message
