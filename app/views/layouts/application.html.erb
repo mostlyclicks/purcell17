@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= render "/refinery/head" %>
     <%= render "/refinery/javascripts" %>
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Source+Sans+Pro" rel="stylesheet">
   </head>
+
+
+
   <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
     <%= site_bar -%>
     <div id="page_container">
@@ -14,13 +18,18 @@
         <%= render "/refinery/header" -%>
       </header>
       <section id="page">
-        <div class="container">
         <%= yield %>
-        </div>
       </section>
       <footer>
       	<div class="container">
-        	<%= render "/refinery/footer" -%>
+        <div class="row">
+          
+          <div class="col-md-8 col-md-offset-1">
+            <%= render "/refinery/footer" -%>
+          </div>
+
+        </div>
+        	
         </div>
       </footer>
     </div>

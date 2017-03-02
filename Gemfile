@@ -6,8 +6,9 @@ gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'bootstrap-sass', '~> 3.3.6'
+
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass', '~> 3.3.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -31,6 +32,13 @@ gem 'refinerycms', '~> 3.0.0'
 gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.7']
 gem 'refinerycms-authentication-devise', '~> 1.0.4'
 gem 'refinerycms-forms', github: 'refinery/refinerycms-forms', branch: 'master', group: :development
+
+group :development do
+  gem 'guard'
+  gem 'guard-sass'
+  gem 'guard-livereload'
+end
+
 
 
 # Use ActiveModel has_secure_password

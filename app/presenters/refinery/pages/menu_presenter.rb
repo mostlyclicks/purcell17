@@ -12,19 +12,21 @@ module Refinery
 
       config_accessor :roots, :menu_tag, :list_tag, :list_item_tag, :css, :dom_id,
                       :max_depth, :active_css, :selected_css, :first_css, :last_css, :list_tag_css,
-                      :link_tag_css
-      self.dom_id = 'menu'
-      self.css = 'menu clearfix'
-      self.menu_tag = :nav
-      self.list_tag = :ul
-      self.list_tag_css = 'nav nav-tabs'
-      self.list_item_tag = :li
-      # self.list_item_css = 
-      self.active_css = :active
-      self.selected_css = :selected
-      self.first_css = :first
-      self.last_css = :last
-      # self.list_tag_css = 'nav'
+                      :link_tag_css, :list_first_css, :carret, :list_dropdown_css, :link_dropdown_options
+      # self.dom_id = 'menu'
+      # self.css = 'menu clearfix'
+            self.menu_tag = :nav
+            self.list_tag = :ul
+            self.list_tag_css = ["nav", "navbar-nav"]#"navbar-nav", "navbar-right"
+            self.carret = '<b class="caret"></b>'
+            self.list_dropdown_css = "dropdown-menu"
+            self.link_dropdown_options = {class: "dropdown-toggle", data: {:toggle=>"dropdown"}}
+            self.list_item_tag = :li
+            #self.list_item_dropdown_css = :dropdown
+            # self.list_item_css = nil
+            self.selected_css = :active
+            self.first_css = :first
+            self.last_css = :last
 
       def roots
         config.roots.presence || collection.roots

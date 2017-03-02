@@ -1,17 +1,65 @@
-$orange:#f48026;
-$cream:#f2f2df;
 
-html, body {background-color:$cream;}
+html, body {
+	background-color:$cream;
+	color:darken($dark-cream,43%);
+
+
+}
 h1, h2, h3, a {color:$orange;}
+strong {
+	color:darken($dark-cream,65%);
+	font-weight: 700;
+}
+
+
+#nav-grid-cell {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f49827+0,e56e24+1,f28926+10,e56e24+100 */
+	background: #f49827;
+	background: -moz-linear-gradient(top, #f49827 0%, #e06c23 7%, #f48026 100%);
+	background: -webkit-linear-gradient(top, #f49827 0%,#e06c23 7%,#f48026 100%);
+	background: linear-gradient(to bottom, #f49827 0%,#e06c23 7%,#f48026 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f49827', endColorstr='#f48026',GradientType=0 );
+}
 
 #top-nav {
+	margin-top:20px;
 	background-color:$cream;
+	font-family:$nav-font;
 	ul {
-		margin-top:20px;
+		/*margin-top:20px;*/
 		border-bottom:0px solid red;
 	}
 }
 
+#main-col {
+	background-color:lighten($cream,6%);
+	padding:10px 40px 40px 40px;
+	font-family: $body-font;
+	p {font-size:105%;}
+	h1 {
+		font-family: $nav-font;
+	}
+}
+
+#address {
+	padding-top:35px;
+	padding-left:35px;
+	color:darken($orange,50%);
+	a {
+		color:darken($orange,10%);
+	}
+	font-family: $nav-font;
+	
+}
+
 #page div.container {
-	background-color:#fff;
+	background-color:#e3e3d4;
+	margin-top:0px;
+}
+
+footer {
+	p {
+		padding:40px 20px;
+		color:darken($dark-cream,10%);
+	}
 }

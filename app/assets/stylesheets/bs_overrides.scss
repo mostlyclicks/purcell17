@@ -1,0 +1,23 @@
+$body-font: 'Source Sans Pro', sans-serif;
+$nav-font: 'Bitter', serif;
+
+
+$orange: #f48026;
+$cream: #f2f2df;
+$dark-cream: #e3e3d4;
+$grid-float-breakpoint:992px;
+
+$navbar-height:40px;
+$navbar-margin-bottom:0px;
+$navbar-default-link-color:$cream;
+$navbar-default-link-active-color:#fff;
+$navbar-default-link-hover-color:#fff;
+$navbar-default-bg:transparent;
+$navbar-default-link-hover-bg:darken($orange, 13%);
+$navbar-default-link-active-bg:lighten($orange,2%);
+$border-radius-base:0px;
+$navbar-default-link-bg-active:$orange;
+$navbar-default-border:transparent;
+$navbar-default-toggle-hover-bg:darken($orange, 13%);
+$navbar-default-toggle-icon-bar-bg:lighten($orange, 17%);
+$navbar-default-toggle-border-color:lighten($orange, 7%);
