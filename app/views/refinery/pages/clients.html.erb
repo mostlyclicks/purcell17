@@ -4,6 +4,22 @@
 			
 		</div>
 		<div class="col-md-8" id="main-col"> 
+
+		<%  @clients = Refinery::Clients::Client.all %>
+
+		<% @clients.each do |c| %>
+			<div class="row">
+				<div class="col-md-8">
+					<h2><%= c.name %></h2>
+					<p>
+						<strong><%= c.job_title %></strong><br>
+						<%= c.company %> – <%= c.city %>, <%= c.state %>
+					</p>
+					<%= c.body.html_safe %>
+				</div>
+				<div class="col-md-4"><%= image_tag c.photo.url, class: 'img-responsive', style: 'margin-top:70px;' %></div>
+			</div>
+		<% end %>
 			<%#= raw @page.content_for :body %>
 			<%#= render '/refinery/content_page' %>
 			
