@@ -3,7 +3,13 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  @clients = Refinery::Clients::Client.all
+  before_action :load_clients
 
+
+  protected
+
+  	def load_clients
+  		@clients = Refinery::Clients::Client.all
+  	end
 
 end
