@@ -33,6 +33,8 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.7']
 gem 'refinerycms-authentication-devise', '~> 1.0.4'
 gem 'refinerycms-forms', github: 'refinery/refinerycms-forms', branch: 'master', group: :development
 
+gem 'sendgrid-ruby'
+
 group :development do
   gem 'guard'
   gem 'guard-sass'
