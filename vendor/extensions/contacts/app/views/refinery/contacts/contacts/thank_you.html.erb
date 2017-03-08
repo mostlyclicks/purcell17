@@ -1,1 +1,14 @@
-<%= render '/refinery/content_page' %>
+<%#= render '/refinery/content_page' %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-1" id="left-col">
+      
+    </div>
+    <div class="col-md-8" id="main-col"> 
+      <%= render '/refinery/content_page' %>
+    </div>
+    <div class="col-md-3" id="address">
+      <%= render '/refinery/pages/sidebar' %>
+    </div>
+  </div>
+</div>
