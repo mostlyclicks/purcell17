@@ -36,6 +36,7 @@ gem 'refinerycms-forms', github: 'refinery/refinerycms-forms', branch: 'master',
 gem 'sendgrid-ruby'
 
 group :production do
+	gem 'dragonfly-s3_data_store'
 	gem 'fog-aws'
 end
 
