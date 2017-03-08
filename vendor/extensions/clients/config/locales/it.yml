@@ -1,0 +1,33 @@
+it:
+  refinery:
+    plugins:
+      clients:
+        title: Clients
+    clients:
+      admin:
+        clients:
+          actions:
+            create_new: Aggiungi Nuovo Client
+            reorder: Riordina Clients
+            reorder_done: Termina il Riordino di Clients
+          records:
+            title: Clients
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Clients. Clicca "Aggiungi Nuovo Client" per aggiungere il tuo primo client.
+          client:
+            view_live_html: Guarda live questo client <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo client
+            delete: Rimuovi per sempre questo client
+      clients:
+        show:
+          other: Altri Clients
+  activerecord:
+    attributes:
+      'refinery/clients/client':
+        name: Name
+        company: Company
+        job_title: Job Title
+        city: City
+        state: State
+        body: Body
+        photo: Photo

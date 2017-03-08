@@ -35,6 +35,10 @@ gem 'refinerycms-forms', github: 'refinery/refinerycms-forms', branch: 'master',
 
 gem 'sendgrid-ruby'
 
+group :production do
+	gem 'fog-aws'
+end
+
 group :development do
   gem 'guard'
   gem 'guard-sass'
@@ -67,3 +71,4 @@ end
 
 
 gem 'refinerycms-contacts', path: 'vendor/extensions'
+gem 'refinerycms-clients', path: 'vendor/extensions'

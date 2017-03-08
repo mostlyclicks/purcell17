@@ -1,0 +1,33 @@
+tr:
+  refinery:
+    plugins:
+      clients:
+        title: Clients
+    clients:
+      admin:
+        clients:
+          actions:
+            create_new: Yeni Ekle Client
+            reorder: Tekrar sirala Clients
+            reorder_done: Tekrar siralama tamamlandiClients
+          records:
+            title: Clients
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Clients yok henuz.  Tikla "Yeni Ekle Client" eklemek senin ilk client.
+          client:
+            view_live_html: Bunu canlu client goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle client
+            delete: Bunu Sil client sonsuza dek
+      clients:
+        show:
+          other: Diger Clients
+  activerecord:
+    attributes:
+      'refinery/clients/client':
+        name: Name
+        company: Company
+        job_title: Job Title
+        city: City
+        state: State
+        body: Body
+        photo: Photo

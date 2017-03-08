@@ -1,0 +1,33 @@
+cs:
+  refinery:
+    plugins:
+      clients:
+        title: Clients
+    clients:
+      admin:
+        clients:
+          actions:
+            create_new: Přidat Client
+            reorder: Řadit Clients
+            reorder_done: Konec řazení Clients
+          records:
+            title: Clients
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Clients. Zvolte "Přidat Client" pro přidání prvního client.
+          client:
+            view_live_html: Zobrazit náhled client<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit client
+            delete: Smazat client
+      clients:
+        show:
+          other: Další Clients
+  activerecord:
+    attributes:
+      'refinery/clients/client':
+        name: Name
+        company: Company
+        job_title: Job Title
+        city: City
+        state: State
+        body: Body
+        photo: Photo

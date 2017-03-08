@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170225211702) do
+ActiveRecord::Schema.define(version: 20170308041617) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,19 @@ ActiveRecord::Schema.define(version: 20170225211702) do
 
   add_index "refinery_authentication_devise_users", ["id"], name: "index_refinery_authentication_devise_users_on_id", using: :btree
   add_index "refinery_authentication_devise_users", ["slug"], name: "index_refinery_authentication_devise_users_on_slug", using: :btree
+
+  create_table "refinery_clients", force: :cascade do |t|
+    t.string   "name"
+    t.string   "company"
+    t.string   "job_title"
+    t.string   "city"
+    t.string   "state"
+    t.text     "body"
+    t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_contacts", force: :cascade do |t|
     t.string   "name"

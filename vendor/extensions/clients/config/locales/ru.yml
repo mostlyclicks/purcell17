@@ -1,0 +1,33 @@
+ru:
+  refinery:
+    plugins:
+      clients:
+        title: Clients
+    clients:
+      admin:
+        clients:
+          actions:
+            create_new: Добавить Client
+            reorder: Изменить порядок Clients
+            reorder_done: Закончить изменять порядок Clients
+          records:
+            title: Clients
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Clients" не найдено. Нажмите "Добавить Client" чтобы создать client.
+          client:
+            view_live_html: Просмотреть client вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать client
+            delete: Удалить client навсегда
+      clients:
+        show:
+          other: Другие Clients
+  activerecord:
+    attributes:
+      'refinery/clients/client':
+        name: Name
+        company: Company
+        job_title: Job Title
+        city: City
+        state: State
+        body: Body
+        photo: Photo

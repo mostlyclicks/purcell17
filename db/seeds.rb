@@ -10,3 +10,6 @@
 Refinery::Pages::Engine.load_seed
 
 Refinery::Contacts::Engine.load_seed
+
+# Added by Refinery CMS Clients extension
+Refinery::Clients::Engine.load_seed
