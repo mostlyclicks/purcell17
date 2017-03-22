@@ -1,7 +1,8 @@
 
 html, body {
 	background-color:$cream;
-	color:darken($dark-cream,43%);
+	color:darken($dark-cream,60%);
+	p {font-weight: normal;}
 
 
 }
@@ -35,10 +36,11 @@ strong {
 	background-color:lighten($cream,6%);
 	padding:10px 40px 40px 40px;
 	font-family: $body-font;
-	p {font-size:105%;}
+	p {font-weight:300;font-size:115%;}
 	h1 {
 		font-family: $nav-font;
 	}
+	
 }
 
 #address {
