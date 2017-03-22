@@ -11,7 +11,7 @@
 					<h2><%= c.name %></h2>
 					<p>
 						<strong><%= c.job_title %></strong><br>
-						<%= c.company %> – <%= c.city %>, <%= c.state %>
+						<%= c.company %><% if c.city && c.state %> – <%= c.city %>, <%= c.state %><% end %>
 					</p>
 					<%= raw c.body %>
 				</div>
