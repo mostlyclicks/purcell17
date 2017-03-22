@@ -13,7 +13,7 @@
 						<strong><%= c.job_title %></strong><br>
 						<%= c.company %> – <%= c.city %>, <%= c.state %>
 					</p>
-					<%= c.body.html_safe %>
+					<%= raw c.body %>
 				</div>
 				<div class="col-md-4"><%= image_tag c.photo.url, class: 'img-responsive', style: 'margin-top:70px;' %></div>
 			</div>
@@ -23,11 +23,6 @@
 					<%= raw @page.content_for(:worked_for) %>
 				</div>
 			</div>
-
-
-
-			
-			
 		</div>
 		<div class="col-md-3" id="address">
 			<%= render 'sidebar' %>
